@@ -6,11 +6,7 @@ from PIL import ImageOps, Image
 from twilio.rest import Client
 import base64
 
-# 🚀 Configuration depuis les secrets de Streamlit
-TWILIO_ACCOUNT_SID = st.secrets["TWILIO_ACCOUNT_SID"]
-TWILIO_AUTH_TOKEN = st.secrets["TWILIO_AUTH_TOKEN"]
-TWILIO_PHONE_NUMBER = st.secrets["TWILIO_PHONE_NUMBER"]
-FORM_URL = st.secrets["FORM_URL"]
+
 
 DB_HOST = st.secrets["DB_HOST"]
 DB_NAME = st.secrets["DB_NAME"]
