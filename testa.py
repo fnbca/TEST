@@ -81,11 +81,7 @@ else:
     # 🚀 Interface d'envoi de SMS
     st.title(f"📩 Depot de Horodatage Fidealis pour Primes - Connecté en tant que {st.session_state['user']}")
 
-    # 📂 Upload CSV ou saisie manuelle des numéros
-    uploaded_file = st.file_uploader("📂 Téléchargez un fichier CSV avec une colonne 'phone_number'", type=["csv"])
-    manual_numbers = st.text_area("✍️ Ou entrez les numéros (séparés par une virgule)")
-
-    phone_numbers = []
+    
 
     # Configuration API Fidealis
     API_URL = os.getenv("API_URL")
