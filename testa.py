@@ -79,9 +79,7 @@ else:
     create_table()
 
     # 🚀 Interface d'envoi de SMS
-    st.title(f"📩 Envoi de SMS - Connecté en tant que {st.session_state['user']}")
-
-    client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
+    st.title(f"📩 Depot de Horodatage Fidealis pour Primes - Connecté en tant que {st.session_state['user']}")
 
     # 📂 Upload CSV ou saisie manuelle des numéros
     uploaded_file = st.file_uploader("📂 Téléchargez un fichier CSV avec une colonne 'phone_number'", type=["csv"])
